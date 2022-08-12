@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->text('body')->nullable();
             $table->text('punchline')->nullable();
-            $table->text('joke_format');
+            $table->enum('joke_format', ['one-liner','two-liner','long']);
             $table->timestamps();
             $table->softDeletes();
         });
