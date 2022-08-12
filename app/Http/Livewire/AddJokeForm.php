@@ -69,9 +69,9 @@ class AddJokeForm extends Component
                 break;
             case 'long':
                 return [
-                    'title' => 'required',
+                    'title' => 'nullable',
                     'body' => 'required',
-                    'punchline' => 'required'
+                    'punchline' => 'nullable'
                 ];
                 break;
             default:
